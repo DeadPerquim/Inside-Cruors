@@ -20,6 +20,10 @@ export class Preload extends Phaser.Scene {
         this.load.image('clouds2', 'sprites/background-images/Clouds/Clouds 1/2.png');
         this.load.image('clouds3', 'sprites/background-images/Clouds/Clouds 1/3.png');
         this.load.image('clouds4', 'sprites/background-images/Clouds/Clouds 1/4.png');
+    
+        this.load.spritesheet('aluno', 'sprites/characters/mago.png', { frameWidth: 64, frameHeight: 64 });
+        this.load.spritesheet('professor', 'sprites/characters/prof.png', { frameWidth: 16, frameHeight: 16 });
+        this.load.spritesheet('rei', 'sprites/characters/rei.png', { frameWidth: 16, frameHeight: 16 });
     }
 
     create() {
