@@ -136,8 +136,6 @@
          "height":64,
          "id":2,
          "name":"Ch\u00e3o\/Base",
-         "offsetx":-17.7971129127941,
-         "offsety":234.32865335179,
          "opacity":1,
          "startx":0,
          "starty":-64,
@@ -203,8 +201,6 @@
          "height":64,
          "id":3,
          "name":"Decora\u00e7\u00e3o",
-         "offsetx":-17.7971129127941,
-         "offsety":234.32865335179,
          "opacity":1,
          "startx":0,
          "starty":-64,
@@ -270,8 +266,6 @@
          "height":64,
          "id":4,
          "name":"Objetos",
-         "offsetx":-17.7971129127941,
-         "offsety":234.32865335179,
          "opacity":1,
          "startx":0,
          "starty":-64,
@@ -344,8 +338,6 @@
          "height":64,
          "id":11,
          "name":"Paredes",
-         "offsetx":-17.7971129127941,
-         "offsety":234.32865335179,
          "opacity":1,
          "startx":0,
          "starty":-64,
@@ -411,8 +403,6 @@
          "height":64,
          "id":13,
          "name":"Camada de Blocos 7",
-         "offsetx":-17.7971129127941,
-         "offsety":234.32865335179,
          "opacity":1,
          "startx":0,
          "starty":-64,
@@ -464,8 +454,6 @@
          "height":64,
          "id":12,
          "name":"BackgroundObjects",
-         "offsetx":-17.7971129127941,
-         "offsety":234.32865335179,
          "opacity":1,
          "startx":0,
          "starty":-64,
@@ -490,8 +478,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":41.624738186,
-                 "y":100
+                 "x":90.3001527004442,
+                 "y":-117.7848379886
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -562,8 +550,6 @@
          "height":64,
          "id":5,
          "name":"Foreground",
-         "offsetx":-17.7971129127941,
-         "offsety":234.32865335179,
          "opacity":1,
          "startx":0,
          "starty":-64,
@@ -608,8 +594,6 @@
          "height":32,
          "id":14,
          "name":"ForegroundSoquemaispracima",
-         "offsetx":-17.7971129127941,
-         "offsety":234.32865335179,
          "opacity":1,
          "startx":0,
          "starty":-32,
@@ -674,7 +658,6 @@
                  "objectgroup":
                     {
                      "draworder":"index",
-                     "id":2,
                      "name":"",
                      "objects":[
                             {
@@ -707,7 +690,6 @@
                  "objectgroup":
                     {
                      "draworder":"index",
-                     "id":2,
                      "name":"",
                      "objects":[
                             {
@@ -767,7 +749,6 @@
                  "objectgroup":
                     {
                      "draworder":"index",
-                     "id":2,
                      "name":"",
                      "objects":[
                             {
@@ -800,7 +781,6 @@
                  "objectgroup":
                     {
                      "draworder":"index",
-                     "id":2,
                      "name":"",
                      "objects":[
                             {
@@ -942,7 +922,6 @@
                  "objectgroup":
                     {
                      "draworder":"index",
-                     "id":3,
                      "name":"",
                      "objects":[
                             {
