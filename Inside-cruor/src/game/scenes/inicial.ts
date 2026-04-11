@@ -9,6 +9,7 @@ export class Inicial extends Scene {
 
   private player!: Player;
   private cursors!: Phaser.Types.Input.Keyboard.CursorKeys;
+  exteriorTiles: any;
 
   constructor() {
     super("Inicial");
@@ -59,7 +60,10 @@ export class Inicial extends Scene {
     // colisão
     paredesLayer.setCollisionByProperty({ colisao: true });
     chaoLayer.setCollisionByProperty({ colisao: true });
-
+    decoracaoLayer?.setCollisionByProperty({colisao: true});
+    objetosLayer?.setCollisionByProperty({colisao: true});
+    foregroundLayer?.setCollisionByProperty({colisao: true});
+    bgObjectsLayer?.setCollisionByProperty({colisao: true});
     // spawn
     const spawnPoint = map.findObject("Spawn", (obj) => obj.name === "start");
 
@@ -90,9 +94,14 @@ export class Inicial extends Scene {
     }
 
     // parallax das nuvens
+    /*this.bg1.tilePositionX += this.player.x;
+    this.bg2.tilePositionX += this.player.x;
+    this.bg3.tilePositionX += this.player.x;
+    this.bg4.tilePositionX += this.player.x;
+    */
     this.bg1.tilePositionX += 0.05;
     this.bg2.tilePositionX += 0.1;
     this.bg3.tilePositionX += 0.2;
-    this.bg4.tilePositionX += 0.3;
+    this.bg4.tilePositionX += 0.3;  
   }
 }
