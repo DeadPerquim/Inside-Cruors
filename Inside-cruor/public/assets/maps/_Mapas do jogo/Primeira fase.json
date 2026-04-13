@@ -3,7 +3,8 @@
     {
      "export":
         {
-         "format":"json"
+         "format":"json",
+         "target":"Primeira fase (1).json"
         }
     },
  "height":20,
@@ -402,7 +403,7 @@
          "encoding":"base64",
          "height":64,
          "id":13,
-         "name":"Camada de Blocos 7",
+         "name":"ParedesParaCompletar",
          "opacity":1,
          "startx":0,
          "starty":-64,
@@ -478,9 +479,11 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":60.9668193671109,
-                 "y":-137.7848379886
+                 "x":23.625,
+                 "y":-135.625
                 }],
+         "offsetx":8.87035,
+         "offsety":-6.7127,
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -658,6 +661,7 @@
                  "objectgroup":
                     {
                      "draworder":"index",
+                     "id":2,
                      "name":"",
                      "objects":[
                             {
@@ -690,6 +694,7 @@
                  "objectgroup":
                     {
                      "draworder":"index",
+                     "id":2,
                      "name":"",
                      "objects":[
                             {
@@ -749,6 +754,7 @@
                  "objectgroup":
                     {
                      "draworder":"index",
+                     "id":2,
                      "name":"",
                      "objects":[
                             {
@@ -781,6 +787,7 @@
                  "objectgroup":
                     {
                      "draworder":"index",
+                     "id":2,
                      "name":"",
                      "objects":[
                             {
@@ -922,6 +929,7 @@
                  "objectgroup":
                     {
                      "draworder":"index",
+                     "id":3,
                      "name":"",
                      "objects":[
                             {
