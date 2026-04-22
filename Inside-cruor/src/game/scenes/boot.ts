@@ -1,15 +1,14 @@
-import {Scene} from 'phaser';
+// =============================================================
+//  boot.ts — Primeira cena: apenas inicia o Preload
+// =============================================================
+import { Scene } from 'phaser';
 
 export class Boot extends Scene {
-    constructor() {
-        super("Boot");
-    }
+  constructor() {
+    super('Boot');
+  }
 
-    preload() {
-
-    }
-
-    create() {
-        this.scene.start("Preload");
-    }
+  create() {
+    this.scene.start('Preload');
+  }
 }
