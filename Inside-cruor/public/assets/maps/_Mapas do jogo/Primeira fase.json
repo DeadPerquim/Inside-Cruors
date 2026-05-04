@@ -3,8 +3,7 @@
     {
      "export":
         {
-         "format":"json",
-         "target":"Primeira fase (1).json"
+         "format":"json"
         }
     },
  "height":20,
@@ -601,7 +600,7 @@
          "startx":0,
          "starty":-32,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":32,
          "x":0,
          "y":0
@@ -640,6 +639,69 @@
          "tiles":[
                 {
                  "id":4,
+                 "objectgroup":
+                    {
+                     "draworder":"index",
+                     "id":3,
+                     "name":"",
+                     "objects":[
+                            {
+                             "height":16,
+                             "id":12,
+                             "name":"",
+                             "opacity":0.62,
+                             "rotation":0,
+                             "type":"",
+                             "visible":true,
+                             "width":5,
+                             "x":11,
+                             "y":0
+                            }, 
+                            {
+                             "height":16,
+                             "id":13,
+                             "name":"",
+                             "opacity":1,
+                             "rotation":0,
+                             "type":"",
+                             "visible":true,
+                             "width":5,
+                             "x":11,
+                             "y":0
+                            }],
+                     "opacity":1,
+                     "type":"objectgroup",
+                     "visible":true,
+                     "x":0,
+                     "y":0
+                    },
+                 "properties":[
+                        {
+                         "name":"colisao",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":5,
+                 "properties":[
+                        {
+                         "name":"colisao",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":6,
+                 "properties":[
+                        {
+                         "name":"colisao",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":7,
                  "properties":[
                         {
                          "name":"colisao",
@@ -649,6 +711,30 @@
                 }, 
                 {
                  "id":8,
+                 "objectgroup":
+                    {
+                     "draworder":"index",
+                     "id":4,
+                     "name":"",
+                     "objects":[
+                            {
+                             "height":16,
+                             "id":5,
+                             "name":"",
+                             "opacity":1,
+                             "rotation":0,
+                             "type":"",
+                             "visible":true,
+                             "width":5,
+                             "x":0,
+                             "y":0
+                            }],
+                     "opacity":1,
+                     "type":"objectgroup",
+                     "visible":true,
+                     "x":0,
+                     "y":0
+                    },
                  "properties":[
                         {
                          "name":"colisao",
@@ -666,7 +752,7 @@
                      "objects":[
                             {
                              "height":16,
-                             "id":1,
+                             "id":2,
                              "name":"",
                              "opacity":1,
                              "rotation":0,
@@ -699,7 +785,7 @@
                      "objects":[
                             {
                              "height":16,
-                             "id":1,
+                             "id":2,
                              "name":"",
                              "opacity":1,
                              "rotation":0,
@@ -733,6 +819,69 @@
                 }, 
                 {
                  "id":29,
+                 "objectgroup":
+                    {
+                     "draworder":"index",
+                     "id":3,
+                     "name":"",
+                     "objects":[
+                            {
+                             "height":16,
+                             "id":2,
+                             "name":"",
+                             "opacity":1,
+                             "rotation":0,
+                             "type":"",
+                             "visible":true,
+                             "width":5,
+                             "x":11,
+                             "y":0
+                            }, 
+                            {
+                             "height":16,
+                             "id":3,
+                             "name":"",
+                             "opacity":1,
+                             "rotation":0,
+                             "type":"",
+                             "visible":true,
+                             "width":5,
+                             "x":11,
+                             "y":0
+                            }],
+                     "opacity":1,
+                     "type":"objectgroup",
+                     "visible":true,
+                     "x":0,
+                     "y":0
+                    },
+                 "properties":[
+                        {
+                         "name":"colisao",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":30,
+                 "properties":[
+                        {
+                         "name":"colisao",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":31,
+                 "properties":[
+                        {
+                         "name":"colisao",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":32,
                  "properties":[
                         {
                          "name":"colisao",
@@ -742,15 +891,6 @@
                 }, 
                 {
                  "id":33,
-                 "properties":[
-                        {
-                         "name":"colisao",
-                         "type":"bool",
-                         "value":true
-                        }]
-                }, 
-                {
-                 "id":34,
                  "objectgroup":
                     {
                      "draworder":"index",
@@ -783,6 +923,39 @@
                         }]
                 }, 
                 {
+                 "id":34,
+                 "objectgroup":
+                    {
+                     "draworder":"index",
+                     "id":2,
+                     "name":"",
+                     "objects":[
+                            {
+                             "height":16,
+                             "id":2,
+                             "name":"",
+                             "opacity":1,
+                             "rotation":0,
+                             "type":"",
+                             "visible":true,
+                             "width":5,
+                             "x":0,
+                             "y":0
+                            }],
+                     "opacity":1,
+                     "type":"objectgroup",
+                     "visible":true,
+                     "x":0,
+                     "y":0
+                    },
+                 "properties":[
+                        {
+                         "name":"colisao",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
                  "id":35,
                  "objectgroup":
                     {
@@ -792,7 +965,7 @@
                      "objects":[
                             {
                              "height":16,
-                             "id":1,
+                             "id":3,
                              "name":"",
                              "opacity":1,
                              "rotation":0,
@@ -823,9 +996,70 @@
                          "type":"bool",
                          "value":true
                         }]
-                }, 
+                },
+            
                 {
                  "id":43,
+                 "properties":[
+                        {
+                         "name":"colisao",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":53,
+                 "objectgroup":
+                    {
+                     "draworder":"index",
+                     "id":2,
+                     "name":"",
+                     "objects":[
+                            {
+                             "height":5,
+                             "id":1,
+                             "name":"",
+                             "opacity":1,
+                             "rotation":0,
+                             "type":"",
+                             "visible":true,
+                             "width":5,
+                             "x":11,
+                             "y":11
+                            }],
+                     "opacity":1,
+                     "type":"objectgroup",
+                     "visible":true,
+                     "x":0,
+                     "y":0
+                    },
+                 "properties":[
+                        {
+                         "name":"colisao",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":55,
+                 "properties":[
+                        {
+                         "name":"colisao",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":56,
+                 "properties":[
+                        {
+                         "name":"colisao",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":57,
                  "properties":[
                         {
                          "name":"colisao",
@@ -853,6 +1087,30 @@
                 }, 
                 {
                  "id":62,
+                 "objectgroup":
+                    {
+                     "draworder":"index",
+                     "id":2,
+                     "name":"",
+                     "objects":[
+                            {
+                             "height":16,
+                             "id":1,
+                             "name":"",
+                             "opacity":1,
+                             "rotation":0,
+                             "type":"",
+                             "visible":true,
+                             "width":10,
+                             "x":0,
+                             "y":0
+                            }],
+                     "opacity":1,
+                     "type":"objectgroup",
+                     "visible":true,
+                     "x":0,
+                     "y":0
+                    },
                  "properties":[
                         {
                          "name":"colisao",
@@ -862,6 +1120,30 @@
                 }, 
                 {
                  "id":64,
+                 "objectgroup":
+                    {
+                     "draworder":"index",
+                     "id":2,
+                     "name":"",
+                     "objects":[
+                            {
+                             "height":16,
+                             "id":1,
+                             "name":"",
+                             "opacity":1,
+                             "rotation":0,
+                             "type":"",
+                             "visible":true,
+                             "width":10,
+                             "x":6,
+                             "y":0
+                            }],
+                     "opacity":1,
+                     "type":"objectgroup",
+                     "visible":true,
+                     "x":0,
+                     "y":0
+                    },
                  "properties":[
                         {
                          "name":"colisao",
@@ -877,8 +1159,7 @@
                          "type":"bool",
                          "value":true
                         }]
-                },
-            
+                }, 
                 {
                  "id":68,
                  "properties":[
@@ -924,6 +1205,16 @@
                          "value":true
                         }]
                 }, 
+                {
+                 "id":78,
+                 "properties":[
+                        {
+                         "name":"colisao",
+                         "type":"bool",
+                         "value":true
+                        }]
+                },
+            
                 {
                  "id":91,
                  "objectgroup":
@@ -1016,6 +1307,30 @@
                 }, 
                 {
                  "id":143,
+                 "objectgroup":
+                    {
+                     "draworder":"index",
+                     "id":2,
+                     "name":"",
+                     "objects":[
+                            {
+                             "height":16,
+                             "id":1,
+                             "name":"",
+                             "opacity":1,
+                             "rotation":0,
+                             "type":"",
+                             "visible":true,
+                             "width":14,
+                             "x":1,
+                             "y":0
+                            }],
+                     "opacity":1,
+                     "type":"objectgroup",
+                     "visible":true,
+                     "x":0,
+                     "y":0
+                    },
                  "properties":[
                         {
                          "name":"colisao",
@@ -1025,6 +1340,30 @@
                 }, 
                 {
                  "id":244,
+                 "objectgroup":
+                    {
+                     "draworder":"index",
+                     "id":4,
+                     "name":"",
+                     "objects":[
+                            {
+                             "height":16,
+                             "id":5,
+                             "name":"",
+                             "opacity":1,
+                             "rotation":0,
+                             "type":"",
+                             "visible":true,
+                             "width":5,
+                             "x":11,
+                             "y":0
+                            }],
+                     "opacity":1,
+                     "type":"objectgroup",
+                     "visible":true,
+                     "x":0,
+                     "y":0
+                    },
                  "properties":[
                         {
                          "name":"colisao",
@@ -1058,8 +1397,7 @@
                          "type":"bool",
                          "value":true
                         }]
-                },
-            
+                }, 
                 {
                  "id":270,
                  "properties":[

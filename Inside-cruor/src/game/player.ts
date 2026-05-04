@@ -10,6 +10,11 @@ export class Player extends Phaser.Physics.Arcade.Sprite {
     this.setScale(0.3);
     this.setOrigin(0.5, 1);
 
+    // Ajuste da hitbox do jogador
+    const body = this.body as Phaser.Physics.Arcade.Body;
+    body.setSize(32, 20); 
+    body.setOffset(16, 44);
+
     // Animação andar para baixo
     this.anims.create({
       key: "walk_down",

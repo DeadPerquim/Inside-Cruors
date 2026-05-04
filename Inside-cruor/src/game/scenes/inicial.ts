@@ -36,56 +36,76 @@ export class Inicial extends Scene {
 
     const allTilesets = [exteriorTiles, casteloTiles];
 
-    // layers
+    // layers (Atenção para manter os acentos exatamente como no Tiled)
     const chaoLayer = map.createLayer("Chão/Base", allTilesets);
-    const paredesLayer = map.createLayer("Paredes", allTilesets);
     const decoracaoLayer = map.createLayer("Decoração", allTilesets);
     const objetosLayer = map.createLayer("Objetos", allTilesets);
+    const paredesLayer = map.createLayer("Paredes", allTilesets);
+    const paredesParaCompletarLayer = map.createLayer("ParedesParaCompletar", allTilesets);
     const bgObjectsLayer = map.createLayer("BackgroundObjects", allTilesets);
     const foregroundLayer = map.createLayer("Foreground", allTilesets);
+    const foregroundSoquemaispracimaLayer = map.createLayer("ForegroundSoquemaispracima", allTilesets);
 
+    // Se o nome estiver errado, o código para aqui (por isso só aparecia nuvem)
     if (!chaoLayer || !paredesLayer) {
-      console.error("Layers não carregaram!");
+      console.error("Layers não carregaram! Verifique os acentos.");
       return;
     }
 
-    // profundidade das layers
+    // ordem de profundidade (Z-INDEX)
     chaoLayer.setDepth(0);
-    paredesLayer.setDepth(1);
-    decoracaoLayer?.setDepth(2);
-    objetosLayer?.setDepth(3);
-    bgObjectsLayer?.setDepth(4);
-    foregroundLayer?.setDepth(1000); // sempre na frente
+    decoracaoLayer?.setDepth(1);
+    objetosLayer?.setDepth(2);
+    bgObjectsLayer?.setDepth(2);
+    paredesLayer.setDepth(2);
+    paredesParaCompletarLayer?.setDepth(2);
+    foregroundLayer?.setDepth(4); 
+    foregroundSoquemaispracimaLayer?.setDepth(5); 
 
-    // colisão
-    paredesLayer.setCollisionByProperty({ colisao: true });
+    // colisões por propriedade
     chaoLayer.setCollisionByProperty({ colisao: true });
-    decoracaoLayer?.setCollisionByProperty({colisao: true});
-    objetosLayer?.setCollisionByProperty({colisao: true});
-    foregroundLayer?.setCollisionByProperty({colisao: true});
-    bgObjectsLayer?.setCollisionByProperty({colisao: true});
-    // spawn
+    decoracaoLayer?.setCollisionByProperty({ colisao: true });
+    objetosLayer?.setCollisionByProperty({ colisao: true });
+    bgObjectsLayer?.setCollisionByProperty({ colisao: true });
+    paredesLayer.setCollisionByProperty({ colisao: true });
+    paredesParaCompletarLayer?.setCollisionByProperty({ colisao: true }); 
+    foregroundSoquemaispracimaLayer?.setCollisionByProperty({ colisao: true });
+
+    // spawn do jogador
     const spawnPoint = map.findObject("Spawn", (obj) => obj.name === "start");
 
     if (!spawnPoint || spawnPoint.x === undefined || spawnPoint.y === undefined) {
       console.error("Spawn point não encontrado!");
       return;
     }
-    // criando jogador
+    
     this.player = new Player(this, spawnPoint.x, spawnPoint.y);
 
-    // colisãodo do jogador com as layers de parede e chão
-    this.physics.add.collider(this.player, paredesLayer);
+    // colisões do jogador (Ajustado com os IFs para o TypeScript não chorar)
     this.physics.add.collider(this.player, chaoLayer);
+    this.physics.add.collider(this.player, paredesLayer);
+    
+    if (paredesParaCompletarLayer) {
+      this.physics.add.collider(this.player, paredesParaCompletarLayer);
+    }
+    if (objetosLayer) {
+      this.physics.add.collider(this.player, objetosLayer);
+    }
+    if (bgObjectsLayer) {
+      this.physics.add.collider(this.player, bgObjectsLayer);
+    }
+    if (foregroundSoquemaispracimaLayer) {
+      this.physics.add.collider(this.player, foregroundSoquemaispracimaLayer);
+    }
 
-    // câmera
-    this.cameras.main.startFollow(this.player, true, 0.1, 0.1); // segue o jogador, com suavização
-    this.cameras.main.setZoom(4); // zoom de 4x (400%)
-    this.cameras.main.fadeIn(1000, 0, 0, 0); // efeito de fade no inicio
-
-    // controles
-    this.cursors = this.input.keyboard.createCursorKeys();
+    // --- CÂMERA E CONTROLES (Os trechos que haviam sido apagados) ---
+    this.cameras.main.startFollow(this.player, true, 0.1, 0.1); 
+    this.cameras.main.setZoom(4); 
+    this.cameras.main.fadeIn(1000, 0, 0, 0); 
+    
+    this.cursors = this.input.keyboard!.createCursorKeys();
   }
+
 
   update() {
     // movimentação do jogador
