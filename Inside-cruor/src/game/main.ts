@@ -9,6 +9,7 @@ const config: Types.Core.GameConfig = {
     height: 768,
     parent: 'game-container',
     scene: [Boot, Preload, Inicial],
+    pixelArt: true,
     physics: {
         default: 'arcade',
         arcade: {
