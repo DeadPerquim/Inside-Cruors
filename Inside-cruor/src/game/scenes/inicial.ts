@@ -69,7 +69,6 @@ export class Inicial extends Scene {
     bgObjectsLayer?.setCollisionByProperty({ colisao: true });
     paredesLayer.setCollisionByProperty({ colisao: true });
     paredesParaCompletarLayer?.setCollisionByProperty({ colisao: true }); 
-    foregroundSoquemaispracimaLayer?.setCollisionByProperty({ colisao: true });
 
     // spawn do jogador
     const spawnPoint = map.findObject("Spawn", (obj) => obj.name === "start");
@@ -93,9 +92,6 @@ export class Inicial extends Scene {
     }
     if (bgObjectsLayer) {
       this.physics.add.collider(this.player, bgObjectsLayer);
-    }
-    if (foregroundSoquemaispracimaLayer) {
-      this.physics.add.collider(this.player, foregroundSoquemaispracimaLayer);
     }
 
     // --- CÂMERA E CONTROLES (Os trechos que haviam sido apagados) ---

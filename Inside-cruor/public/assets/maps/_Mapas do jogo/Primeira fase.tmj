@@ -1,12 +1,4 @@
 { "compressionlevel":-1,
- "editorsettings":
-    {
-     "export":
-        {
-         "format":"json",
-         "target":"Primeira fase.tmj"
-        }
-    },
  "height":20,
  "infinite":true,
  "layers":[
