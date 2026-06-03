@@ -28,13 +28,15 @@ export class Inicial extends Scene {
     // tilesets
     const exteriorTiles = map.addTilesetImage("exterior", "exterior");
     const casteloTiles = map.addTilesetImage("Castelo-interior", "Castelo-interior");
+    const bookAltarTiles = map.addTilesetImage("book_altar", "book_altar");
+    const livro1Tiles = map.addTilesetImage("livro1", "livro1");
 
-    if (!exteriorTiles || !casteloTiles) {
+    if (!exteriorTiles || !casteloTiles || !bookAltarTiles || !livro1Tiles) {
       console.error("Tileset não carregou!");
       return;
     }
 
-    const allTilesets = [exteriorTiles, casteloTiles];
+    const allTilesets = [exteriorTiles, casteloTiles, bookAltarTiles, livro1Tiles];
 
     // layers (Atenção para manter os acentos exatamente como no Tiled)
     const chaoLayer = map.createLayer("Chão/Base", allTilesets);
