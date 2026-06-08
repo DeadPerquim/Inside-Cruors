@@ -16,6 +16,8 @@ export class Preload extends Phaser.Scene {
         this.load.image('Castelo-interior', 'maps/Castelo (by FlapJack)/Castelo-interior_v2.png');
         this.load.image('book_altar', 'maps/Altar/book_altar.png');
         this.load.image('livro1', 'maps/Book/livro1.png');
+        this.load.image('Tileset_RockSlope', 'maps/Primavera/The Fan-tasy Tileset (Free)/Art/Rock Slopes/Tileset_RockSlope.png');
+        this.load.image('Props', 'maps/Primavera/The Fan-tasy Tileset (Free)/Art/Props/Atlas/Props.png');
 
         
         this.load.image('clouds1', 'sprites/background-images/Clouds/Clouds 1/1.png');
